@@ -44,8 +44,9 @@ FROM actor a
 INNER JOIN film_actor fa ON fa.actor_id = a.actor_id
 GROUP BY a.actor_id, a.first_name, a.last_name;
       
-    
+ /*   
 La vista 'actor_info' obtiene informacion sobre los actores como su id, el nombre, apellido, por su lado tambiem obtiene la informacion de las peliculas en las que actuaron cada actor segun la pelicula, esto se logro gracias a la union del inner join donde relaciono las identificadores de los actores con las peliculas a traves de la tabla film_actor.   
         
 
 "Vista Materializada" Es una tabla especial que almacena los resultados de ciertas consultas para que puedan ser accedidos de manera rápida y eficiente en lugar de tener que calcularlos nuevamente cada vez que se hace la misma pregunta. Es como tener un registro de respuestas precalculadas para agilizar el acceso a la información.
+*/
